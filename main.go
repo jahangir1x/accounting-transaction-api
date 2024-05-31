@@ -1,4 +1,4 @@
-package accounting_transaction_api
+package main
 
 import (
 	"accounting_transaction_api/containers"

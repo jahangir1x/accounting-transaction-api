@@ -10,6 +10,7 @@ type Config struct {
 	DBUser string `mapstructure:"DBUSER"`
 	DBPass string `mapstructure:"DBPASS"`
 	DBIp   string `mapstructure:"DBIP"`
+	DBPort string `mapstructure:"DBPORT"`
 	DBName string `mapstructure:"DBNAME"`
 	Port   string `mapstructure:"PORT"`
 }

@@ -13,7 +13,7 @@ var db *gorm.DB
 // Connect to the database.
 func Connect() {
 	dbConfig := config.LocalConfig
-	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=Asia/Dhaka", dbConfig.DBIp, dbConfig.DBUser, dbConfig.DBPass, dbConfig.DBName, dbConfig.Port)
+	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=Asia/Dhaka", dbConfig.DBIp, dbConfig.DBUser, dbConfig.DBPass, dbConfig.DBName, dbConfig.DBPort)
 	d, err := gorm.Open(postgres.Open(dsn), &gorm.Config{
 		Logger:         logger.Default.LogMode(logger.Info),
 		TranslateError: true,

@@ -3,6 +3,7 @@ module accounting_transaction_api
 go 1.22
 
 require (
+	github.com/google/uuid v1.4.0
 	github.com/labstack/echo/v4 v4.12.0
 	github.com/spf13/viper v1.18.2
 	gorm.io/driver/postgres v1.5.7

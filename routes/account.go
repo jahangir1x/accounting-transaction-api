@@ -18,5 +18,7 @@ func CreateNewAccountRoute(e *echo.Echo, controller controllers.AccountControlle
 }
 
 func (ar *AccountRoutes) InitAccountRoutes() {
-
+	ar.echo.GET("/transactions", func(c echo.Context) error {
+		return ar.controller.GetTransactions(c)
+	})
 }
